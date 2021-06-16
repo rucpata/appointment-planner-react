@@ -17,8 +17,8 @@ function App() {
         phone: phone,
         email: email,
       },
-    ])
-  }
+    ]);
+  };
 
   const [appointments, setAppointments] = useState([]);
   const addAppointments = (title, contact, date, time) => {
@@ -46,10 +46,10 @@ function App() {
     <>
       <nav>
         <NavLink to={ROUTES.CONTACTS} activeClassName="active">
-          Contacts
+          Kontakty
         </NavLink>
         <NavLink to={ROUTES.APPOINTMENTS} activeClassName="active">
-          Appointments
+          Spotkania
         </NavLink>
       </nav>
       <main>

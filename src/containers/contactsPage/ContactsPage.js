@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+
 import { ContactForm } from '../../components/contactForm/ContactForm';
 import { TileList } from '../../components/tileList/TileList';
 
@@ -49,7 +50,7 @@ export const ContactsPage = ({contacts, addContact}) => {
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Dodaj kontakt</h2> 
         {duplicate ? ' ISTNIEJE JUŻ TAKI KONTAKT' : ''}
         <ContactForm
           name={name}
@@ -58,13 +59,13 @@ export const ContactsPage = ({contacts, addContact}) => {
           setPhone = {setPhone}
           email={email}
           setEmail = {setEmail}
-          onClick={handleSubmit}
+          handleSubmit={handleSubmit}
         />
       </section>
       <hr />
       <section>
-        <h2>Contacts</h2>
-        <TileList tiles={contacts}/>
+        <h2>Kontakty</h2>
+        <TileList tiles={contacts} />
       </section>
     </div>
   );

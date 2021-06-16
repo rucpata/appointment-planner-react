@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: block;
+    
+}
+
+nav > a {
+    align-items: center;
+}
+
