@@ -4,6 +4,8 @@ import { Switch, Route, Redirect, NavLink } from "react-router-dom";
 import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
+import './App.css';
+
 function App() {
   /*
   Define state variables for 
@@ -43,7 +45,7 @@ function App() {
   */
 
   return (
-    <>
+    <div className='app'>
       <nav>
         <NavLink to={ROUTES.CONTACTS} activeClassName="active">
           Kontakty
@@ -74,7 +76,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-    </>
+    </div>
   );
 }
 
