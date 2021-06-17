@@ -4,12 +4,46 @@
 }
 
 body{
-    /* padding: 5%; */
+    padding: 5%;
     margin: 2.5%;
-    height: 94vh;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
-    border: 4px double black;
+    font-size: 16px;
 }
 
+nav {
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+nav > a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: grey;
+    margin: 30.5px;
+    text-decoration-line: none; 
+}
 
+nav > a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black
+  }
+
+input, select{
+    display: block;
+    width: 80%;
+    margin: 10px;
+    padding: 2px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+.tile-container {
+    border-bottom: 1px dotted gray;
+    margin-bottom: 2px;
+}

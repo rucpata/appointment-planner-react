@@ -45,16 +45,16 @@ function App() {
   */
 
   return (
-    <div className = 'row'>
-      <nav className='col-3 border-end'>
-        <NavLink className='row' to={ROUTES.CONTACTS} activeClassName="active">
+    <div className = 'app row'>
+      <nav>
+        <NavLink to={ROUTES.CONTACTS} activeClassName="active">
           Kontakty
         </NavLink>
-        <NavLink className='row' to={ROUTES.APPOINTMENTS} activeClassName="active">
+        <NavLink to={ROUTES.APPOINTMENTS} activeClassName="active">
           Spotkania
         </NavLink>
       </nav>
-      <main className='col-9'>
+      <main>
         <Switch>
           <Route exact path="/">
             <Redirect to={ROUTES.CONTACTS} />
