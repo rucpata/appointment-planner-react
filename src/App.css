@@ -4,8 +4,7 @@
 }
 
 body{
-    padding: 5%;
-    margin: 2.5%;
+    margin: 4%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
@@ -13,7 +12,8 @@ body{
 nav {
     text-align: center;
     border: 1px solid gray;
-    margin-bottom: 20px;
+    margin: 70px 30px 20px 0;
+    padding: 10px;
 }
 nav > a{
     font-style: normal;
@@ -41,6 +41,7 @@ input, select{
 
 h2{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .tile-container {
