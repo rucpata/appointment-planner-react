@@ -7,16 +7,24 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+<<<<<<< HEAD
     "acorn-dynamic-import": "^4.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "gh-pages": "^3.2.1",
     "json-loader": "^0.5.7",
+=======
+    "bootstrap": "^5.0.1",
+>>>>>>> c55c71bcf59b67ecd73a31805de3855e9b0d26c8
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+<<<<<<< HEAD
     "react-scripts": "4.0.2",
     "toposort": "^2.0.2",
+=======
+    "react-scripts": "^1.1.5",
+>>>>>>> c55c71bcf59b67ecd73a31805de3855e9b0d26c8
     "web-vitals": "^1.0.1"
   },
   "scripts": {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -48,3 +49,17 @@ h2{
     border-bottom: 1px dotted gray;
     margin-bottom: 2px;
 }
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+body{
+    background-color: red;
+}
+
+
+
+>>>>>>> c55c71bcf59b67ecd73a31805de3855e9b0d26c8
