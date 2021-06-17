@@ -10,8 +10,8 @@ export const ContactForm = ({
   handleSubmit
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
-      <input 
+    <form  className='col' onSubmit={handleSubmit}>
+      <input className='row'
         type="text" 
         name="name" 
         value={name}
@@ -19,7 +19,7 @@ export const ContactForm = ({
         required
         placeholder='Nazwa Kontaktu'
       />
-      <input 
+      <input className='row'
         type="tel"
         name="phone"
         value={phone}
@@ -27,7 +27,7 @@ export const ContactForm = ({
         required
         placeholder='Numer telefonu' 
       />
-      <input 
+      <input className='row'
         type="email"
         name="email"
         value={email}
@@ -35,7 +35,11 @@ export const ContactForm = ({
         required
         placeholder='Adres email' 
       />
-      <input type="submit" value="Dodaj kontakt" />
+      <input 
+        className='row'
+        type="submit" 
+        value="Dodaj kontakt" 
+      />
     </form>
   );
 };

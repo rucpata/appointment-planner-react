@@ -4,6 +4,8 @@ import { Switch, Route, Redirect, NavLink } from "react-router-dom";
 import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 function App() {
   /*
   Define state variables for 
@@ -43,16 +45,16 @@ function App() {
   */
 
   return (
-    <>
-      <nav>
-        <NavLink to={ROUTES.CONTACTS} activeClassName="active">
+    <div className = 'row'>
+      <nav className='col-3 border-end'>
+        <NavLink className='row' to={ROUTES.CONTACTS} activeClassName="active">
           Kontakty
         </NavLink>
-        <NavLink to={ROUTES.APPOINTMENTS} activeClassName="active">
+        <NavLink className='row' to={ROUTES.APPOINTMENTS} activeClassName="active">
           Spotkania
         </NavLink>
       </nav>
-      <main>
+      <main className='col-9'>
         <Switch>
           <Route exact path="/">
             <Redirect to={ROUTES.CONTACTS} />
@@ -74,7 +76,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-    </>
+    </div>
   );
 }
 
